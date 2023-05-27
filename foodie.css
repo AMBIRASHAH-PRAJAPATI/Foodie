@@ -1,0 +1,719 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: ProximaNova,arial,Helvetica Neue,sans-serif;
+}
+a{
+  text-decoration: none;
+  color: rgb(238, 238, 238);
+}
+
+#header {
+  padding: 0;
+  background-image: url("./images/hero.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center top;
+  height: 85vh;
+  font-display:flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#header .container {
+  /* width: 90%; */
+  margin: 20px 0 auto;
+  height: 80%;
+
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
+
+.main-nav{
+   display: flex;
+    align-items: center;
+    /* position:relative; */
+    top:0px;
+    /* box-shadow: 0px 2px 2px grey; */
+    font-weight: 100;
+    background-color: #49494924;
+    box-shadow: 0px 3px 10px rgba(206, 204, 204, 0.677);
+}
+
+.main-nav .logo {
+  margin-top: 4px;
+  cursor: pointer;
+  width: 70px;
+  height: 70px;
+
+}
+
+.logo img{
+  width: 70px;
+  height: 70px;
+}
+
+.main-nav ul {
+  display: flex;
+  list-style: none;
+  text-transform: uppercase;
+  
+ 
+}
+
+/* #header .main-nav ul li:nth-child(1) {
+  margin-right: 22px;
+} */
+
+.main-nav a {
+  color: #fff;
+  text-decoration: none;
+  padding:3px 1.5vw;
+  text-shadow: 2px 3px 4px rgb(36, 36, 36);
+}
+.left {
+  margin-left: auto;
+  /* display: flex; */
+  box-sizing: border-box; 
+  }
+
+.upper{
+  display:flex;
+  flex-wrap: wrap;
+  flex-direction:row;
+}
+.up-dis{
+  width: 20%;
+  /* text-align: right; */
+  margin-left:15%;
+  padding-top:20px;
+  color: aliceblue;
+}
+.up-dis h1{
+  font-size: larger;
+  font-weight: 600px;
+}
+
+#header .branding {
+  text-align: center;
+  width: 60%;
+}
+
+#header .branding h1 {
+  font-size: 25px;
+  font-family: "Times New Roman";
+  color: rgba(255, 255, 255, 0.702);
+  font-weight: bold;
+  font-style: italic;
+}
+
+#header .branding h1 span {
+  font-style: normal;
+  display: block;
+  margin: 30px 0;
+  text-transform: uppercase;
+  font-size: 35px;
+  font-family: "Lato";
+  color: #fff;
+  font-weight: bold;
+}
+
+#header .branding .btn-cta {
+  padding: 8px 36px;
+  text-transform: uppercase;
+  border: 3px solid #000000;
+  border-radius: 5px;
+  font-size: 16px;
+  font-family: "Lato";
+  color: #ff0000;
+  background-color: rgba(70, 246, 61, 0.767);
+  box-shadow: 6px 6px 7px rgb(104, 104, 104);
+  text-shadow: 6px 6px 6px black;
+  font-weight: bold;
+  text-align: center;
+  cursor: pointer;
+}
+.btn-cta a{
+  color: #ff0000;
+}
+.btn-cta:hover{
+  transform: scale(1.1);
+  transition: all;
+}
+
+#header .branding p {
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-family: "Lato";
+  color: #fff;
+  margin: 33px 0 0 0;
+}
+
+#header .branding p a {
+  color: #fff;
+  font-weight: bold;
+}
+
+@media screen and (min-width: 768px) {
+  #header {
+    height: 100vh;
+  }
+
+  #header .container {
+    height: 81%;
+    width: 81%;
+    margin: 0 auto;
+  }
+
+  #header .branding h1 span {
+    font-size: 75px;
+  }
+
+  #header .branding .btn-cta {
+    padding: 18px 60px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  #header .container {
+    width: 87%;
+    margin: 0 auto;
+
+  }
+}
+@media screen and (max-width: 1024px){
+  .up-dis{
+    width: 25%;
+    margin-left:10%;
+    padding-top:20px;
+    color: aliceblue;
+  }
+}
+@media screen and (max-width: 768px) {
+  .up-dis{
+    width: 30%;
+    margin-left:5%;
+    padding-top:20px;
+    color: aliceblue;
+  }
+}
+@media screen and (max-width: 564px) {
+  .upper{
+    justify-content: center;
+  }
+  .up-dis{
+    width:100%;
+    margin: 0px;
+    text-align: center;
+    padding:20px;
+  }
+}
+
+
+#features {
+  margin-top:50px;
+  padding-bottom: 50px;
+  border-bottom:2px solid gray;
+  
+}
+
+#features .container {
+  width: 90%;
+  margin: 0 auto;
+}
+
+#features .feature {
+  text-align: center;
+}
+
+#features .feature .fig-image {
+  margin: 0;
+}
+
+#features .feature h2 {
+  display: inline-block;
+  margin: 5px 0 0 0;
+  padding-bottom: 7px;
+  font-size: 18px;
+  font-family: "Lato";
+  color: black;
+  font-weight: bold;
+  border-bottom: 1px solid #ff3333;
+}
+
+#features .feature p {
+  font-family: "Lato";
+  color: black;
+}
+
+@media screen and (min-width: 768px) {
+  #features .container {
+    display: flex;
+    width: 81%;
+    margin: 0 auto;
+  }
+}
+
+
+
+.favo{
+  margin: 10vh 5vw 30px 17vw;
+  padding: 0px;
+}
+.fav-head{
+  display: flex;
+}
+.fav-head .hr{
+  margin-top: 10px;
+  /* background-color: #43b1e0; */
+  width:50%;
+  border-top: 1.7px solid rgba(208, 207, 207, 0.658);
+  margin: 33px 0px 0px 20px;
+}
+
+.fav-container{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: start;
+  padding: 0px;
+  margin: 0px;
+  text-align: center;
+}
+
+.fav-container article{
+  width: 275px;
+  padding: 0px;
+  margin: 10px;
+  background-color: rgba(246, 246, 246, 0.847);
+  border-radius:8px;
+}
+.fav-container article:hover{
+  box-shadow:5px 5px 5px gray,-5px -5px 5px gray;
+}
+.fav-container article img,.fav-container article figure {
+  width: 100%;
+  height: 200px;
+  margin: 0px;
+  border-radius:8px 8px 0px 0px;
+}
+.fav-container article figcaption h4{
+  padding: 5px;
+  text-decoration:none;
+  color: #000;
+  text-transform:uppercase;
+  font-weight: 800;
+  font-size: 15px;
+}
+.all-fav figcaption h4 span{
+  font-weight: 700;
+  font-size: 14px;
+  border-bottom: 1.5px solid rgb(142, 142, 142);
+  text-transform: none;
+}
+.all-fav a figure img{
+  width:70%;
+}
+
+
+/* #mobile-app {
+  font-family: "Lato";
+  padding: 30px 0 0 20px;
+  background-color: #f7f7f7;
+}
+
+#mobile-app .content h2 {
+  padding-bottom: 8px;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+#mobile-app .content h2 span {
+  border-bottom: 1px solid #ff3333;
+  padding-bottom: 8px;
+}
+
+#mobile-app .iphone {
+  display: none;
+}
+
+@media screen and (min-width: 768px) {
+  #mobile-app {
+    padding: 30px 0 0 0;
+  }
+
+  #mobile-app .container {
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+  }
+
+  #mobile-app .content {
+    flex-basis: calc(55% - 3em);
+  }
+
+  #mobile-app .iphone {
+    flex-basis: calc(45% - 3em);
+    margin: 0;
+    order: -1;
+    display: block;
+  }
+
+  #mobile-app .iphone img {
+    width: 100%;
+    height: 100%;
+  }
+} */
+
+.coupon{
+  text-align: center;
+  /* margin-top:8vh; */
+  background-color: #ebebeb;
+  padding: 8vh 0px;
+}
+
+.scroll-container {
+  display: flex;
+  overflow-x: scroll;
+  /* height: 300px; */
+  padding: 2px 50px 2px 50px;
+  background-color: #43b1e0;
+  margin-bottom: 15vh;
+  box-shadow: 0px 8px 20px black, 0px -8px 20px black;
+  width: 95%;
+  margin: 9vh auto;
+  border-radius:8px;
+  box-sizing: border-box;
+}
+.scroll-box{
+  padding:10px;
+  margin:10px;
+  border-radius:4px;
+  background-color: rgb(255, 255, 255);
+  
+}
+.scroll-box :hover{
+  box-shadow: 4px 4px 10px rgb(144, 144, 144), -4px -4px 10px rgb(144, 144, 144);
+  transform: scale(1);
+  transition:all 0.5s;
+}
+.scroll-pic :hover{
+  box-shadow: none;
+  transform:scale(1.1);
+}
+
+.scroll-pic {
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /* margin: 5px; */
+  padding: 15px 15px 1px 15px;
+  height: 250px;
+  min-width: 250px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  transform: scale(0.9);
+}
+#a {
+  background-image: url("https://thumbs.dreamstime.com/b/food-drink-coupon-ticket-card-coffee-toast-element-template-graphics-design-vector-illustration-food-drink-coupon-160470244.jpg");
+}
+#b {
+  background-image: url("https://image.freepik.com/free-vector/modern-coupon-voucher-template-design_23-2147941997.jpg");
+}
+#c {
+  background-image: url("https://th.bing.com/th/id/OIP.gg-qzUDUL5weWxYQfcUV8AAAAA?pid=ImgDet&rs=1");
+}
+#d {
+  background-image: url("https://i.pinimg.com/474x/7b/34/47/7b34478803f6b2d98d934bc802bd695b.jpg");
+}
+#e {
+  background-image: url("https://thumbs.dreamstime.com/b/food-drink-coupon-ticket-card-coffee-toast-element-template-graphics-design-vector-illustration-160470326.jpg");
+}
+
+#f {
+  background-image: url("https://static.vecteezy.com/system/resources/previews/000/453/376/non_2x/vector-fast-food-menu.jpg");
+}
+#g {
+  background-image: url("https://thumbs.dreamstime.com/b/food-drink-coupon-ticket-card-coffee-toast-element-template-graphics-design-vector-illustration-food-drink-coupon-160470377.jpg");
+}
+#h {
+  background-image: url("https://images.examples.com/wp-content/uploads/2017/11/Food-Discount-Coupon.jpg");
+}
+#i {
+  background-image: url("https://i.pinimg.com/originals/62/df/84/62df8410b1dcfd513ae29c88ec708525.jpg");
+}
+#j {
+  background-image: url("https://images.template.net/wp-content/uploads/2019/04/Food-Cuisine-Restaurant-Coupon-Template.jpg");
+}
+#k {
+  background-image: url("https://cdn.dribbble.com/users/3969910/screenshots/6986757/bbcvoucher02.png");
+}
+#l {
+  background-image: url("https://thumbs.dreamstime.com/b/fast-food-banner-backdrop-template-vector-colorful-flat-design-various-illustration-green-background-deco-77001545.jpg");
+}
+#m {
+  background-image: url("https://image.freepik.com/free-vector/food-gift-voucher-template-with-photo_23-2148793687.jpg");
+}
+#n {
+  background-image: url("https://img.freepik.com/free-vector/world-food-day-voucher-with-salad-mushroom-peas-cucumber-watercolor-illustration_83728-1584.jpg?size=338&ext=jpg");
+}
+#o {
+  background-image: url("https://img.freepik.com/free-psd/discount-voucher-template-sushi-restaurant_23-2148456718.jpg?size=626&ext=jpg");
+}
+#p {
+  background-image: url("https://static.mallscenters.com/shoppers-food-basket-offer-from-january-21-to-january-24-2021-page-1.jpg");
+}
+
+
+.scroll-pic h3 {
+  margin: 0;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.scroll-pic p {
+  font-family: "Times New Roman";
+  /* color: rgba(255, 255, 255, 0.902); */
+  font-weight: bold;
+  font-style: italic;
+  margin: 0;
+}
+
+
+
+#reviews {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url("./images/reviews-bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  height: 315px;
+  text-align: center;
+  font-size: 18px;
+  font-family: "Lato";
+  color: white;
+  margin-top: 60px;
+}
+
+#reviews .quote {
+  margin: 0;
+}
+
+#reviews .quote footer {
+  margin-top: 18px;
+  font-size: 14px;
+}
+
+
+
+#cuisines {
+  font-family: "lato";
+}
+
+#cuisines h2 {
+  text-align: center;
+  text-transform: uppercase;
+  margin: 0 0 25px 0;
+  padding-top: 40px;
+}
+
+#cuisines h2 span {
+  padding-bottom: 5px;
+  border-bottom: 1px solid red;
+}
+
+#cuisines .container {
+  margin-top: 50px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+#cuisines .container .cuisine {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  color: #fff;
+  min-width:303.8px;
+  height: 240px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+#cuisines .container .cuisine h3 {
+  margin: 0;
+  text-transform: uppercase;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+#cuisines .container .cuisine p {
+  font-family: "Times New Roman";
+  color: rgba(255, 255, 255, 0.902);
+  font-weight: bold;
+  font-style: italic;
+  margin: 0;
+}
+
+#cuisines .container .american {
+  background-image: url("./images/american.png");
+}
+
+#cuisines .container .chinese {
+  background-image: url("./images/chinese.png");
+}
+
+#cuisines .container .french {
+  background-image: url("./images/french.png");
+}
+
+#cuisines .container .indian {
+  background-image: url("./images/indian.png");
+}
+
+#cuisines .container .italian {
+  background-image: url("./images/italian.png");
+}
+
+#cuisines .container .mexican {
+  background-image: url("./images/mexican.png");
+}
+
+#cuisines .container .pizza {
+  background-image: url("./images/pizza.png");
+}
+
+#cuisines .container .seafood {
+  background-image: url("./images/seafood.png");
+}
+
+#cuisines .container .steak {
+  background-image: url("./images/steak.png");
+}
+
+#cuisines .container .sushi {
+  background-image: url("./images/sushi.png");
+}
+
+#statistics {
+  font-family: "lato";
+  background-color: #4a3949;
+  padding: 25px 0;
+  margin-top:20px;
+}
+
+#statistics .stat-data {
+  color: #fff;
+  text-align: center;
+  padding: 15px 0;
+}
+
+#statistics .stat-data h3 {
+  margin: 0;
+  font-size: 36px;
+}
+
+#statistics .stat-data h3 span {
+  font-size: 14px;
+  display: block;
+}
+
+@media screen and (min-width: 768px) {
+  #statistics {
+    border-bottom: 1px solid grey;
+    background-color: #fff;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 0px;
+  }
+
+  #statistics .stat-data {
+    color: #000;
+  }
+
+  #statistics .stat-data h3 {
+    font-size: 34px;
+  }
+
+  #statistics .stat-data h3 span {
+    font-size: 13px;
+  }
+}
+
+#ex-data-sec{
+  background-color: #040404;
+  margin: 0px;
+  padding: 0px 10px 0px 10px;
+}
+.ex-data-d{
+  max-width: 1100px;
+  /* min-width: 1200px; */
+  position: relative;
+  margin: 0 auto;
+  padding-top: 70px;
+}
+.ex-t{
+  display: flex;
+  flex-wrap:wrap;
+  padding: 30px 10px 30px 30px;
+}
+.t{
+  width:250px;
+}
+.t div{
+  color: gray;
+  font-size: 15px;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+.t ul{
+  margin: 20px 0px 0px 0px;
+  padding: 0px;
+}
+.t li{
+  font-size: 17px;
+    margin-top: 15px;
+    display: block;
+    text-transform: capitalize;
+}
+.t-pic{
+  width: 200px;
+  margin-left: 100px;
+}
+.t-pic a img{
+  margin:20px 0px;
+}
+.t-pic a img:hover{
+  transform: scale(1.1);
+  transition: all 1ms;
+}
+
+#footer {
+  font-family: "lato";
+  font-size: 18px;
+  text-align: center;
+}
+
+#footer .container {
+  width: 100%;
+}
+
+@media screen and (min-width: 768px) {
+  #footer .container {
+    width: 81%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+  }
+}
