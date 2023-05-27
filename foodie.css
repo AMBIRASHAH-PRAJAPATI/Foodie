@@ -374,6 +374,7 @@ a{
   /* margin-top:8vh; */
   background-color: #ebebeb;
   padding: 8vh 0px;
+  text transform: capitalize;
 }
 
 .scroll-container {
