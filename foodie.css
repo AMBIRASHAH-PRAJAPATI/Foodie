@@ -399,7 +399,7 @@ a{
 .scroll-box :hover{
   box-shadow: 4px 4px 10px rgb(144, 144, 144), -4px -4px 10px rgb(144, 144, 144);
   transform: scale(1);
-  transition:all 0.5s;
+  transition:all 0.2s;
 }
 .scroll-pic :hover{
   box-shadow: none;
