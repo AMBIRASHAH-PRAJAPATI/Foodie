@@ -19,17 +19,14 @@ a{
   align-items: center;
   justify-content: center;
 }
-
 #header .container {
   /* width: 90%; */
-  margin: 20px 0 auto;
+  margin: auto;
   height: 80%;
-
   display: flex;
   justify-content: space-between;
   flex-direction: column;
 }
-
 .main-nav{
    display: flex;
     align-items: center;
@@ -40,7 +37,6 @@ a{
     background-color: #49494924;
     box-shadow: 0px 3px 10px rgba(206, 204, 204, 0.677);
 }
-
 .main-nav .logo {
   margin-top: 4px;
   cursor: pointer;
@@ -48,24 +44,15 @@ a{
   height: 70px;
 
 }
-
 .logo img{
   width: 70px;
   height: 70px;
 }
-
 .main-nav ul {
   display: flex;
   list-style: none;
   text-transform: uppercase;
-  
- 
 }
-
-/* #header .main-nav ul li:nth-child(1) {
-  margin-right: 22px;
-} */
-
 .main-nav a {
   color: #fff;
   text-decoration: none;
@@ -77,7 +64,6 @@ a{
   /* display: flex; */
   box-sizing: border-box; 
   }
-
 .upper{
   display:flex;
   flex-wrap: wrap;
@@ -94,12 +80,10 @@ a{
   font-size: larger;
   font-weight: 600px;
 }
-
 #header .branding {
   text-align: center;
   width: 60%;
 }
-
 #header .branding h1 {
   font-size: 25px;
   font-family: "Times New Roman";
@@ -107,7 +91,6 @@ a{
   font-weight: bold;
   font-style: italic;
 }
-
 #header .branding h1 span {
   font-style: normal;
   display: block;
@@ -118,7 +101,6 @@ a{
   color: #fff;
   font-weight: bold;
 }
-
 #header .branding .btn-cta {
   padding: 8px 36px;
   text-transform: uppercase;
@@ -141,7 +123,6 @@ a{
   transform: scale(1.1);
   transition: all;
 }
-
 #header .branding p {
   font-size: 14px;
   text-transform: uppercase;
@@ -150,88 +131,25 @@ a{
   color: #fff;
   margin: 33px 0 0 0;
 }
-
 #header .branding p a {
   color: #fff;
   font-weight: bold;
 }
-
-@media screen and (min-width: 768px) {
-  #header {
-    height: 100vh;
-  }
-
-  #header .container {
-    height: 81%;
-    width: 81%;
-    margin: 0 auto;
-  }
-
-  #header .branding h1 span {
-    font-size: 75px;
-  }
-
-  #header .branding .btn-cta {
-    padding: 18px 60px;
-  }
-}
-
-@media screen and (min-width: 1024px) {
-  #header .container {
-    width: 87%;
-    margin: 0 auto;
-
-  }
-}
-@media screen and (max-width: 1024px){
-  .up-dis{
-    width: 25%;
-    margin-left:10%;
-    padding-top:20px;
-    color: aliceblue;
-  }
-}
-@media screen and (max-width: 768px) {
-  .up-dis{
-    width: 30%;
-    margin-left:5%;
-    padding-top:20px;
-    color: aliceblue;
-  }
-}
-@media screen and (max-width: 564px) {
-  .upper{
-    justify-content: center;
-  }
-  .up-dis{
-    width:100%;
-    margin: 0px;
-    text-align: center;
-    padding:20px;
-  }
-}
-
-
 #features {
   margin-top:50px;
   padding-bottom: 50px;
   border-bottom:2px solid gray;
-  
 }
-
 #features .container {
   width: 90%;
   margin: 0 auto;
 }
-
 #features .feature {
   text-align: center;
 }
-
 #features .feature .fig-image {
   margin: 0;
 }
-
 #features .feature h2 {
   display: inline-block;
   margin: 5px 0 0 0;
@@ -242,22 +160,10 @@ a{
   font-weight: bold;
   border-bottom: 1px solid #ff3333;
 }
-
 #features .feature p {
   font-family: "Lato";
   color: black;
 }
-
-@media screen and (min-width: 768px) {
-  #features .container {
-    display: flex;
-    width: 81%;
-    margin: 0 auto;
-  }
-}
-
-
-
 .favo{
   margin: 10vh 5vw 30px 17vw;
   padding: 0px;
@@ -272,7 +178,6 @@ a{
   border-top: 1.7px solid rgba(208, 207, 207, 0.658);
   margin: 33px 0px 0px 20px;
 }
-
 .fav-container{
   display: flex;
   flex-direction: row;
@@ -283,7 +188,6 @@ a{
   margin: 0px;
   text-align: center;
 }
-
 .fav-container article{
   width: 275px;
   padding: 0px;
@@ -317,65 +221,12 @@ a{
 .all-fav a figure img{
   width:70%;
 }
-
-
-/* #mobile-app {
-  font-family: "Lato";
-  padding: 30px 0 0 20px;
-  background-color: #f7f7f7;
-}
-
-#mobile-app .content h2 {
-  padding-bottom: 8px;
-  font-size: 18px;
-  font-weight: bold;
-}
-
-#mobile-app .content h2 span {
-  border-bottom: 1px solid #ff3333;
-  padding-bottom: 8px;
-}
-
-#mobile-app .iphone {
-  display: none;
-}
-
-@media screen and (min-width: 768px) {
-  #mobile-app {
-    padding: 30px 0 0 0;
-  }
-
-  #mobile-app .container {
-    width: 90%;
-    margin: 0 auto;
-    display: flex;
-    justify-content: space-around;
-  }
-
-  #mobile-app .content {
-    flex-basis: calc(55% - 3em);
-  }
-
-  #mobile-app .iphone {
-    flex-basis: calc(45% - 3em);
-    margin: 0;
-    order: -1;
-    display: block;
-  }
-
-  #mobile-app .iphone img {
-    width: 100%;
-    height: 100%;
-  }
-} */
-
 .coupon{
   text-align: center;
   /* margin-top:8vh; */
   background-color: #ebebeb;
   padding: 8vh 0px;
 }
-
 .scroll-container {
   display: flex;
   overflow-x: scroll;
@@ -399,13 +250,12 @@ a{
 .scroll-box :hover{
   box-shadow: 4px 4px 10px rgb(144, 144, 144), -4px -4px 10px rgb(144, 144, 144);
   transform: scale(1);
-  transition:all 0.5s;
+  transition:all 0.2s;
 }
 .scroll-pic :hover{
   box-shadow: none;
   transform:scale(1.1);
 }
-
 .scroll-pic {
   display:flex;
   flex-direction: column;
@@ -470,13 +320,11 @@ a{
   background-image: url("https://static.mallscenters.com/shoppers-food-basket-offer-from-january-21-to-january-24-2021-page-1.jpg");
 }
 
-
 .scroll-pic h3 {
   margin: 0;
   text-transform: uppercase;
   font-weight: bold;
 }
-
 .scroll-pic p {
   font-family: "Times New Roman";
   /* color: rgba(255, 255, 255, 0.902); */
@@ -484,9 +332,6 @@ a{
   font-style: italic;
   margin: 0;
 }
-
-
-
 #reviews {
   display: flex;
   justify-content: center;
@@ -502,22 +347,16 @@ a{
   color: white;
   margin-top: 60px;
 }
-
 #reviews .quote {
   margin: 0;
 }
-
 #reviews .quote footer {
   margin-top: 18px;
   font-size: 14px;
 }
-
-
-
 #cuisines {
   font-family: "lato";
 }
-
 #cuisines h2 {
   text-align: center;
   text-transform: uppercase;
@@ -629,28 +468,6 @@ a{
   display: block;
 }
 
-@media screen and (min-width: 768px) {
-  #statistics {
-    border-bottom: 1px solid grey;
-    background-color: #fff;
-    display: flex;
-    justify-content: space-around;
-    margin-top: 0px;
-  }
-
-  #statistics .stat-data {
-    color: #000;
-  }
-
-  #statistics .stat-data h3 {
-    font-size: 34px;
-  }
-
-  #statistics .stat-data h3 span {
-    font-size: 13px;
-  }
-}
-
 #ex-data-sec{
   background-color: #040404;
   margin: 0px;
@@ -709,11 +526,93 @@ a{
   width: 100%;
 }
 
+
+/* mediaquery */
+@media screen and (max-width: 1024px){
+  .up-dis{
+    width: 25%;
+    margin-left:10%;
+    padding-top:20px;
+    color: aliceblue;
+  }
+}
+@media screen and (min-width: 1024px) {
+  #header .container {
+    width: 87%;
+    margin: 0 auto;
+
+  }
+}
 @media screen and (min-width: 768px) {
+  #header {
+    height: 100vh;
+  }
+
+  #header .container {
+    height: 81%;
+    width: 81%;
+    margin: 0 auto;
+  }
+
+  #header .branding h1 span {
+    font-size: 75px;
+  }
+
+  #header .branding .btn-cta {
+    padding: 18px 60px;
+  }
+  #features .container {
+    display: flex;
+    width: 81%;
+    margin: 0 auto;
+  }
+  #statistics {
+    border-bottom: 1px solid grey;
+    background-color: #fff;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 0px;
+  }
+
+  #statistics .stat-data {
+    color: #000;
+  }
+
+  #statistics .stat-data h3 {
+    font-size: 34px;
+  }
+
+  #statistics .stat-data h3 span {
+    font-size: 13px;
+  }
   #footer .container {
     width: 81%;
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
   }
+}
+@media screen and (max-width: 768px) {
+  .up-dis{
+    width: 30%;
+    margin-left:5%;
+    padding-top:20px;
+    color: aliceblue;
+  }
+}
+@media screen and (max-width: 564px) {
+  .upper{
+    justify-content: center;
+  }
+  .up-dis{
+    width:100%;
+    margin: 0px;
+    text-align: center;
+    padding:20px;
+  }
+  .main-nav ul a {
+    font-size: 12px;
+    padding: 3px 1vw;
+}
+  
 }
